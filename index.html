@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Creation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><a href="index.html">ADVENTURE</a></h1>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active" ><a href="#tours" >Tours</a></li>
+            <li class="active" ><a href="#explore">Explore</a></li>
+            <li class="active"   ><a href="#about">About</a></li>
+            <li class="ctn"><a href="login.html">Login</a></li>
+            
+        </ul>
+        
+        <img src="image/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header><section id="home">
+        <div class="header-content">
+            <h2>Explore Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFULLL GIFT</h1>
+            <a href="new.html" class="ctn">Learn More</a>
+        </div></section>
+    </header>
+
+    
+    <!-- events -->
+    <section class="events" id="tours">
+        <div class="title">
+            <h1>Upcomming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>The Everest Camp Trek is a breathtaking adventure that takes you to the base camp of the world's highest mountain, Mt Everest.</p>
+                <a href="everest.html" class="ctn"> Learn More</a>
+            </div>
+            <div class="col">
+                <img src="image/img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Holidays take you to the most scenic and off-the-beaten-path that allows you to immerse yourself in the beauty of nature.</p>
+                <a href="holidays.html" class="ctn"> Learn More</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Whether you're an adventure enthusiast, a culture seeker, or a nature lover, we have the perfect trip for you.
+                Our team of expert guides and travel enthusiasts is dedicated to creating personalized journeys that cater to your interests and preferences. Get ready to embark on a journey of a lifetime!
+            </p>
+            <a href="explore.html" class="ctn">Learn More</a>
+        </section>
+    </div>
+
+    <!-- tours -->
+    <section class="tours" id="about">
+        <div class="row">
+            <div class="col contact-col">
+                <h1>UPCOMMING TOURS & DESTINATION</h1>
+                <div class="line"> </div>
+                <P>Nepal, a land of breathtaking beauty, offers an array of captivating tours and destinations. From the majestic peaks of the Himalayas to the serene valleys of Pokhara, it's a paradise for trekkers and nature enthusiasts. Discover ancient temples in Kathmandu and immerse yourself in the rich cultural tapestry that makes Nepal a truly unique and enchanting destination.</P>
+                <a href="destination.html" class="ctn">Learn More</a>
+            </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="image/img3.png" alt="">
+                        <img src="image/img4.png" alt="">
+                        <img src="image/img5.png" alt="">
+                        <img src="image/img6.png" alt="">
+                    </div>
+                </div>
+             </div>
+  </section>
+
+
+
+
+  <section class="footer"  >
+    <p> 123 Fifth Avenue, NY 10160 , Kathmandu, Nepal|Phone:+977 123-456-7890|Email:contact@example.com</p>
+    <p>Copyright © 2023 Outdoor Advantures</p>
+  </section>
+
+
+  
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
